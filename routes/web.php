@@ -2,6 +2,7 @@
 
 use App\Models\Invoices;
 use App\Models\InvoicesDetails;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\RoleController;
@@ -128,6 +129,7 @@ Route::middleware([
     });
 
                 
+    
 
 
     Route::resource('invoices', InvoicesController::class);
